@@ -2,11 +2,22 @@ import React, { Component } from "react";
 import { TextInput, StyleSheet, TextInputProps } from "react-native";
 import { colors } from "../constants";
 
-interface Props extends TextInputProps {}
+interface Props extends TextInputProps {
+  error?: any;
+}
 
 export class Input extends Component<Props, {}> {
   render() {
-    return <TextInput {...this.props} style={styles.inputStyle} />;
+    const { error } = this.props;
+    return (
+      <TextInput
+        {...this.props}
+        style={[
+          styles.inputStyle,
+          { borderBottomColor: error ? colors.accent : colors.borderColor }
+        ]}
+      />
+    );
   }
 }
 

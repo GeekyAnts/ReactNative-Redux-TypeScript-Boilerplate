@@ -5,23 +5,33 @@ import Icon from "react-native-vector-icons/Ionicons";
 
 interface Props {
   title: string;
-  leftButtonPress: () => void;
+  leftButtonPress?: () => void;
+  rightButtonPress?: () => void;
 }
 
 export class Header extends Component<Props, {}> {
   render() {
-    const { title, leftButtonPress } = this.props;
+    const { title, leftButtonPress, rightButtonPress } = this.props;
     return (
       <View style={styles.container}>
         <View style={styles.leftContainer}>
-          <TouchableOpacity style={styles.leftButton} onPress={leftButtonPress}>
+          <TouchableOpacity style={styles.iconButton} onPress={leftButtonPress}>
             <Icon name="ios-menu" size={24} />
           </TouchableOpacity>
         </View>
         <View style={styles.midContainer}>
           <Text style={styles.headerTitle}>{title}</Text>
         </View>
-        <View style={styles.rightContainer} />
+        <View style={styles.rightContainer}>
+          {rightButtonPress ? (
+            <TouchableOpacity
+              style={styles.iconButton}
+              onPress={rightButtonPress}
+            >
+              <Icon name="ios-power" size={24} />
+            </TouchableOpacity>
+          ) : null}
+        </View>
       </View>
     );
   }
@@ -53,7 +63,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "flex-end"
   },
-  leftButton: {
+  iconButton: {
     paddingHorizontal: 16
   }
 });

@@ -19,8 +19,9 @@ class AuthLoading extends React.Component<Props, {}> {
   }
 
   _bootstrapAsync = async () => {
+    const { navigation } = this.props;
     const userToken = await AsyncStorage.getItem("userToken");
-    this.props.navigation.navigate(userToken ? "AppStack" : "AuthStack");
+    navigation.navigate(userToken ? "AppStack" : "AuthStack");
   };
 
   render() {
