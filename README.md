@@ -1,6 +1,6 @@
 ## React Native Boilerplate
 
-### A [React Native](https://facebook.github.io/react-native/docs/getting-started.html) Starter Kit with [React Navigation](https://reactnavigation.org/) + [Redux](https://github.com/reactjs/redux) + [Redux Thunk](https://github.com/reduxjs/redux-thunk) + [TypeScript](https://github.com/microsoft/TypeScript) + [Formik](https://github.com/jaredpalmer/formik)
+### A [React Native](https://facebook.github.io/react-native/docs/getting-started.html) Starter Kit with [React Navigation](https://reactnavigation.org/) + [Redux](https://github.com/reactjs/redux) + [TypeScript](https://github.com/microsoft/TypeScript) + [Formik](https://github.com/jaredpalmer/formik)
 
 ## Get Started
 
