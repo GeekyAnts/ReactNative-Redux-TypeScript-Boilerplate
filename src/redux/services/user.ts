@@ -1,4 +1,4 @@
-import { AsyncStorage } from "react-native";
+import AsyncStorage from '@react-native-community/async-storage';
 
 export function fetchImageService(page?: number, limit?: number) {
   return new Promise((resolve, reject) => {
@@ -18,7 +18,7 @@ export function fetchImageService(page?: number, limit?: number) {
 export function loginUserService(username: string, password: string) {
   return new Promise((resolve, reject) => {
     let userToken = `${username}${password}`;
-    AsyncStorage.setItem("userToken", userToken)
+    AsyncStorage.setItem('userToken', userToken)
       .then(() => {
         resolve(userToken);
       })
@@ -30,7 +30,7 @@ export function loginUserService(username: string, password: string) {
 
 export function logoutUserService() {
   return new Promise((resolve, reject) => {
-    AsyncStorage.removeItem("userToken")
+    AsyncStorage.removeItem('userToken')
       .then(() => {
         resolve();
       })
