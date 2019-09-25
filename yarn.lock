@@ -974,6 +974,11 @@
     eslint-plugin-react-native "3.6.0"
     prettier "1.16.4"
 
+"@react-native-community/masked-view@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@react-native-community/masked-view/-/masked-view-0.1.1.tgz#dbcfc5ec08efbb02d4142dd9426c8d7a396829d7"
+  integrity sha512-EyJVSbarZkOPYq+zCZLx9apMcpwkX9HvH6R+6CeVL29q88kEFemnLO/IhmE4YX/0MfalsduI8eTi7fuQh/5VeA==
+
 "@react-navigation/core@3.5.0-alpha.8":
   version "3.5.0-alpha.8"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.5.0-alpha.8.tgz#4a3c08bba6bd834b410c1147c0e9776b647ea0d9"
@@ -984,7 +989,7 @@
     query-string "^6.4.2"
     react-is "^16.8.6"
 
-"@react-navigation/core@^5.0.0-alpha.10":
+"@react-navigation/core@^5.0.0-alpha.0", "@react-navigation/core@^5.0.0-alpha.10":
   version "5.0.0-alpha.10"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-5.0.0-alpha.10.tgz#4e1010d30c758ab283c8e3a79231c7ee98af807f"
   integrity sha512-dZPC9A3LIntaEbTp+/vm1Ee/r50Er44aNhmrW7PMA3T/AQtNVnJsgV3ff3ZhCf2wM2/J7Z3K/BAU5zZ1tvKsqA==
@@ -993,6 +998,15 @@
     query-string "^6.8.3"
     shortid "^2.2.14"
     use-subscription "^1.0.0"
+
+"@react-navigation/drawer@^5.0.0-alpha.0":
+  version "5.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@react-navigation/drawer/-/drawer-5.0.0-alpha.0.tgz#a4e2a318d0254eef9dac3bdbae46e0e4a84a478f"
+  integrity sha512-ppM/rItRlmNKxqrw1ahKhA96KSfqZDzo4oACivPz1KL9sknr4pK95sWRaX0YujGud388NJ0Qc3CyOfu9hdETfA==
+  dependencies:
+    "@react-navigation/core" "^5.0.0-alpha.0"
+    "@react-navigation/routers" "^5.0.0-alpha.0"
+    react-native-safe-area-view "^0.14.6"
 
 "@react-navigation/native@^3.6.0-alpha.6":
   version "3.6.2"
@@ -1007,6 +1021,29 @@
   version "5.0.0-alpha.8"
   resolved "https://registry.yarnpkg.com/@react-navigation/native/-/native-5.0.0-alpha.8.tgz#771ee6b48e539ca420453dc1e3efbf41e2f9f9e4"
   integrity sha512-eZnoaj/LTxF6hywK1EXCJAlDZDhh/We6JSVyN6Whrkbw7jrTVL8NJdMXn8txp8fvFWvWMduSx5SOavWBAfmJMA==
+
+"@react-navigation/routers@^5.0.0-alpha.0":
+  version "5.0.0-alpha.0"
+  resolved "https://registry.yarnpkg.com/@react-navigation/routers/-/routers-5.0.0-alpha.0.tgz#9c2373a8dd3fa24ebdc9ffd8583e7a3af949bbfb"
+  integrity sha512-A0GIXJghZ88idfFmyl66FIsGCqCqOhOt413UH6IpVfOfeW+lAaBfTEWUZL5CjnajayYJQfDLKQZYT/04cKkHqw==
+  dependencies:
+    "@react-navigation/core" "^5.0.0-alpha.0"
+    shortid "^2.2.14"
+
+"@react-navigation/routers@^5.0.0-alpha.7":
+  version "5.0.0-alpha.7"
+  resolved "https://registry.yarnpkg.com/@react-navigation/routers/-/routers-5.0.0-alpha.7.tgz#7cbe052c270da8922d6f9dc541b96b64d6849fc0"
+  integrity sha512-AMTYj+9c/4846yl1QxJ8GvojqmL17C5VVI1yDonb5YYgV+XaWcMFk5luour8S8WnYtBn6pGvLeRH9AurUYSMmA==
+  dependencies:
+    shortid "^2.2.14"
+
+"@react-navigation/stack@^5.0.0-alpha.17":
+  version "5.0.0-alpha.17"
+  resolved "https://registry.yarnpkg.com/@react-navigation/stack/-/stack-5.0.0-alpha.17.tgz#f7d19f3d864cc7a6cfebea03b50f34f62238ef80"
+  integrity sha512-jXpJ8rE1AlhAQXKLUwngkqk4EdqUFpMJ4dlUeLJTNwYG7/c16UBSD+Q8H7ytK4ghSHFnfNfneeZsTcIfTOJYqg==
+  dependencies:
+    "@react-navigation/routers" "^5.0.0-alpha.7"
+    react-native-safe-area-view "^0.14.6"
 
 "@types/babel__core@^7.1.0":
   version "7.1.2"
@@ -1969,6 +2006,11 @@ dayjs@^1.8.15:
   version "1.8.16"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.8.16.tgz#2a3771de537255191b947957af2fd90012e71e64"
   integrity sha512-XPmqzWz/EJiaRHjBqSJ2s6hE/BUoCIHKgdS2QPtTQtKcS9E4/Qn0WomoH1lXanWCzri+g7zPcuNV4aTZ8PMORQ==
+
+debounce@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.0.tgz#44a540abc0ea9943018dc0eaa95cce87f65cd131"
+  integrity sha512-mYtLl1xfZLi1m4RtQYlZgJUNQjl4ZxVnHzIR8nLLgi4q1YT8o/WM+MK/f8yfcc9s5Ir5zRaPZyZU6xs1Syoocg==
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   version "2.6.9"
@@ -4929,11 +4971,30 @@ react-native-gesture-handler@^1.4.1:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-reanimated@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-1.2.0.tgz#9219227a52a5dfa4d34c324596d6726ccd874293"
+  integrity sha512-vkWRHrPK5qfHP/ZawlRoo38oeYe9NZaaOH/lmFxRcsKzaSK6x3H5ZPXI8lK6MfTLveqwo1QhJje3zIKXO4nQQw==
+
 react-native-safe-area-view@^0.14.1:
   version "0.14.5"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.14.5.tgz#eeded66bbeb0807f0a7f5f449e7fb2871f7ecf76"
   dependencies:
     hoist-non-react-statics "^2.3.1"
+
+react-native-safe-area-view@^0.14.6:
+  version "0.14.8"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.14.8.tgz#ef33c46ff8164ae77acad48c3039ec9c34873e5b"
+  integrity sha512-MtRSIcZNstxv87Jet+UsPhEd1tpGe8cVskDXlP657x6rHpSrbrc+y13ZNXrwAgGNNhqQNX7UJT68ZIq//ZRmvw==
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+
+react-native-screens@1.0.0-alpha.23:
+  version "1.0.0-alpha.23"
+  resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-1.0.0-alpha.23.tgz#25d7ea4d11bda4fcde2d1da7ae50271c6aa636e0"
+  integrity sha512-tOxHGQUN83MTmQB4ghoQkibqOdGiX4JQEmeyEv96MKWO/x8T2PJv84ECUos9hD3blPRQwVwSpAid1PPPhrVEaw==
+  dependencies:
+    debounce "^1.2.0"
 
 "react-native-screens@^1.0.0 || ^1.0.0-alpha":
   version "1.0.0-alpha.22"
