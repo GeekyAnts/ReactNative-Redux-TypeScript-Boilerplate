@@ -10,6 +10,7 @@ import {
 import Login from '../../screens/AuthScreens/Login';
 import Home from '../../screens/AppScreens/Home';
 import Blank from '../../screens/AppScreens/Blank';
+import SideBar from '../AppScreens/SideBar';
 
 const Drawer = createDrawerNavigator();
 
@@ -34,7 +35,7 @@ export default function AuthLoading({navigation}) {
 
   return (
     <>
-      <Drawer.Navigator>
+      <Drawer.Navigator contentComponent={() => <SideBar />}>
         {isLoading ? (
           // We haven't finished checking for the token yet
           <Drawer.Screen name="splash" options={{header: null}}>
