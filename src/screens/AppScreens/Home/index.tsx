@@ -35,9 +35,9 @@ function Home(props: Props) {
 
   const handleLogout = () => {
     const {navigation} = props;
-    navigation.navigate('Login');
-    // logoutUserService().then(() => {
-    // });
+    logoutUserService().then(() => {
+      navigation.navigate('Login');
+    });
   };
 
   return (

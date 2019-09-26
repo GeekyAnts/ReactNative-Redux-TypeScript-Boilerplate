@@ -35,7 +35,8 @@ export default function AuthLoading({navigation}) {
 
   return (
     <>
-      <Drawer.Navigator contentComponent={() => <SideBar />}>
+      <Drawer.Navigator
+        contentComponent={() => <SideBar navigation={navigation} />}>
         {isLoading ? (
           // We haven't finished checking for the token yet
           <Drawer.Screen name="splash" options={{header: null}}>

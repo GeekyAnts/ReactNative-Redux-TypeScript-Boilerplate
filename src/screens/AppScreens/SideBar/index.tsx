@@ -7,16 +7,18 @@ interface Props {
   navigation: any;
 }
 
-function SideBar(props: Props) {
+function SideBar({navigation}) {
   return (
     <View style={styles.container}>
       <ListItem
         title="Home"
-        onPress={() => props.navigation.navigate('Home')}
+        onPress={() => {
+          navigation.navigate('Home');
+        }}
       />
       <ListItem
         title="Blank Page"
-        onPress={() => props.navigation.navigate('Blank')}
+        onPress={() => navigation.navigate('Blank')}
       />
     </View>
   );
